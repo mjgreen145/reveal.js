@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/demo/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="/demo/css/flexboxgrid.css">
+		<link rel="stylesheet" type="text/css" href="/demo/css/icon-sprite-png.css">
+		<link rel="import" href="/components/polymer/polymer.html">
+	    <link rel="import" href="/components/component-collections/global.html">
+	    <link rel="import" href="/components/pages/product-page.html">
+	  	<script src="/demo/js/stubs.js"></script>
+	</head>
+	<body class="no-svg">
+		<h1>NAP Form Elements</h1>
+		<p>Email input</p>
+		<input-email id="primaryEmail" label="Email address*" error="Not Valid Email Address" required></input-email>
+		<p>Confirm email input</p>
+		<input-email label="Confirm email address*" error="Email Address Does Not Match" linked="primaryEmail" required></input-email>
+		<p>Text input (required)</p>
+		<input-text name="firstname" label="First Name*" type="text" error="Not Valid" required></input-text>
+		<p>Text input</p>
+		<input-text name="surname" label="Surname" type="text" error="Not Valid"></input-text>
+		<p>Text input - prepopulated</p>
+		<input-text name="prepopulated" label="test prepopulated" type="text" error="Not Valid" value="pre populated value"></input-text>
+		<p>Password input (required)</p>
+		<input-text name="password" label="Password*" type="password" error="Not Valid" required></input-text>
+		<p>Telephone input</p>
+		<input-telephone name="telephone" label="Telephone Number*" error="Not Valid" required></input-telephone>
+		<p>Country select dropdown</p>
+		<select-country name="country" label="Country*" required></select-country>
+		<p>Select dropdown</p>
+		<select-dropdown name="enquiry" label="Your enquiry*" required tooltip="Select an option" options='[
+			{"value": "delivery", "name": "Delivery"},
+			{"value": "sizing", "name": "Sizing"},
+			{"value": "orderAssistance", "name": "Order assistance"},
+			{"value": "whatToWear", "name": "What to wear"}
+		]'></select-dropdown>
+		<p>Textarea field</p>
+		<textarea-field name="message" label="Your message*" rows=10 required></textarea-field>
+	</body>
+</html>
