@@ -46,7 +46,7 @@ var NAP = {
       createList: function(callback) {
         callback({
           id: '55af6e00e4b03a617e4b3853',
-          name: 'listName',
+          name: 'New List',
           shared: false
         });
       }

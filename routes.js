@@ -17,7 +17,7 @@ module.exports = function(server) {
 		var options = {
 			root: __dirname
 		};
-		res.sendFile('index.html', options)
+		res.sendFile('index.html', options);
 	});
 
 	server.get('/api/styling/products/:pid/:channelID/outfits.json', function(req, res){
@@ -25,4 +25,17 @@ module.exports = function(server) {
 			res.status(200).send(data);
 		});
 	});
+
+	server.get('/webapi/feed/sessioncount/NAP.json', function(req, res) {
+        getFromLive(req.originalUrl, function(data){
+        	res.status(200).send(data);
+        });
+    });
+
+    // stub for product activity
+    server.get('/webapi/feed/productactivity.json', function(req, res) {
+        getFromLive(req.originalUrl, function(data){
+        	res.status(200).send(data);
+        });
+    });
 };

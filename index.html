@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Polymer In Production</title>
 
 		<meta name="description" content="Slide deck for Web Components Meetup Talk">
 		<meta name="author" content="Matt and Robin">
@@ -38,10 +38,6 @@
 			<div class="slides">
 				<section>
 					<h1>Polymer In Production</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
 				</section>
 
 				<!-- NAP Product Price -->
@@ -117,15 +113,50 @@
 					</code></pre>
 				</section>
 
-                <!-- Upsell module -->
+                <!-- HTWI module -->
                 <section>
-                    <iframe height="350" width="100%" src="/demo/upsell-modules/nap-htwi-module.html" scrolling="no"></iframe>
-
-                    <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
-&lt;nap-htwi-module pid="597093" heading="How to wear it"&gt;
-&lt;/nap-htwi-module&gt;
-                    </code></pre>
+                    <iframe height="1000" width="100%" src="/demo/upsell-modules/nap-htwi-module.html" style="margin-top: -70px;" scrolling="no"></iframe>
                 </section>
+
+                <!-- HTWI module code -->
+                <section>
+                    <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
+&lt;nap-htwi-module pid="597093" heading="How to wear it"&gt;&lt;/nap-htwi-module&gt;
+                    </code></pre>
+                    <img src="/images/components-demo/htwi_network.png" style="border: none; margin-top: 50px;"/>
+                </section>
+
+                <!-- NAP Live -->
+				<section>
+					<iframe height="350" width="100%" src="/demo/nap-live/nap-live.html" scrolling="no"></iframe>
+					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
+&lt;nap-live&gt;&lt;/nap-live&gt;
+					</code></pre>
+				</section>
+
+                <!-- NAP Forms -->
+				<section>
+					<iframe height="400" width="100%" src="/demo/nap-forms/nap-forms.html" scrolling="no"></iframe>
+					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
+&lt;input-email id="primaryEmail" label="Email address*" error="Not Valid Email Address" required&gt;&lt;/input-email&gt;
+&lt;input-email label="Confirm email address*" error="Email Address Does Not Match" linked="primaryEmail" required&gt;&lt;/input-email&gt;
+&lt;input-text name="firstname" label="First Name*" type="text" error="Not Valid" required&gt;&lt;/input-text&gt;
+&lt;input-text name="surname" label="Surname" type="text" error="Not Valid"&gt;&lt;/input-text&gt;
+&lt;input-text name="password" label="Password*" type="password" error="Not Valid" required&gt;&lt;/input-text&gt;
+&lt;input-telephone name="telephone" label="Telephone Number*" error="Not Valid" required&gt;&lt;/input-telephone&gt;
+&lt;select-country name="country" label="Country*" required&gt;&lt;/select-country&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<iframe height="350" width="100%" src="/demo/nap-widgets/nap-wishlist-button.html" scrolling="no"></iframe>
+					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
+&lt;nap-wishlist-button wishlists='[...]'&gt;&lt;/nap-wishlist-button&gt;
+					</code></pre>
+					<aside class="notes">
+						For a new wishlist, use "New List"
+					</aside>
+				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
