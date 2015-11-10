@@ -20,18 +20,20 @@ When interacting with the components, focus gets put on the iframes, so need to 
 
 **Sections**
 
-Polymer - what is it? - MG
+Intro - MG
+- Who is NAP
+- Polymer - what is it?
 
 D.Bod spiel - DB
-
-Reusable components have been tried before - with little success - DB
-- SMACSS
-- Bootstrap
-- LESS/SASS Mixins
-
-Components - show them. - DB
+- Set scene (failed previous attempts)
+- "Smoking Gun" - data analysis & change in design approach (atomic)
+- Opportunity (header and footer), end with product page
 
 Mid way through project - bit risky (browser support) - MG
+
+Components - show them. - MG + RG
+- Price -> upsell - RG
+- HTWI, nap-live, forms, wishlist - MG
 
 Bower module (build, Vulcanise etc) - RG
 

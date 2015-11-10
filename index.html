@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="/css/reveal.css">
-		<link rel="stylesheet" href="/css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="/css/theme/nap.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="/lib/css/zenburn.css">
@@ -36,9 +36,74 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+                <!-- Title -->
 				<section>
 					<h1>Polymer In Production</h1>
 				</section>
+
+                <!-- Who are we? -->
+                <section style="text-align: left;">
+                    <div class="mugshot">
+                        <img width="200" height="200" src="/images/furniture/matt.jpeg">
+                        <span>Matt Green <a class="handle" href="https://twitter.com/mjgreen145">@mjgreen145</a></span>
+                    </div>
+                    <div class="mugshot">
+                        <img width="200" height="200" src="/images/furniture/robin.jpeg">
+                        <span>Robin Glen <a class="handle" href="https://twitter.com/arielwithlegs">@arielwithlegs</a></span>
+                    </div>
+                    <div class="mugshot">
+                        <img width="200" height="200" src="/images/furniture/dbod.jpeg">
+                        <span>David Boddy <a class="handle" href="https://twitter.com/threetwotwo">@threetwotwo</a></span>
+                    </div>
+                </section>
+
+                <!-- Who is NAP -->
+                <section>
+                    <div>
+                        <img src="/images/furniture/net-a-porter.svg">
+                    </div>
+                </section>
+
+                <!-- Landscape of NAP -->
+                <section>
+                    <h1>Landscape at Net-A-Porter</h1>
+                </section>
+
+                <!-- What kicked it off -->
+                <section>
+                    <h1>What kicked it off</h1>
+                </section>
+
+                <!-- Identify the opportunity -->
+                <section>
+                    <h1>Identify the opportunity</h1>
+                </section>
+
+                <!-- Product Page -->
+                <section>
+                    <h1>Product page</h1>
+                </section>
+
+                <!-- Pivot -->
+                <section>
+                    <h1>Technical Pivot</h1>
+                </section>
+
+                <!-- Browser Support -->
+                <section>
+                    <h1>Technical Pivot</h1>
+                    <aside class="notes">
+                        W3 Standard - soon no Polyfill needed
+                        Feels like Web dev, no framework in the way
+                        Easy to adopt / low entry level
+                        Speed to development.
+                    </aside>
+                </section>
+
+                <!-- Our Components -->
+                <section>
+                    <h1>Components</h1>
+                </section>
 
 				<!-- NAP Product Price -->
 				<section>
@@ -81,25 +146,23 @@
                     <div style="width: 50%; float: right;">
                     <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;nap-product product='{
-    "name":"Les Essentiels Show bandeau bikini top",
-    "visible":true,
-    "price":{
-        "currency":"GBP",
-        "divisor":100,
-        "gross":15500
+    "name": "Oversized leather bomber jacket",
+    "price": {
+        "discountPercent": 60,
+        "divisor": 100,
+        "gross": 143200,
+        "currency": "GBP",
+        "original": {
+            "gross": 358000
+        }
     },
-    "onSale":false,
-    "brand":{
-        "id":1755,
-        "name":"Eres",
-        "urlKey":"Eres"
+    "onSale": false,
+    "brand": {
+        "id": 128,
+        "name": "Marni",
+        "urlKey": "Marni"
     },
-    "id":594952,
-    "nonReturnable":false,
-    "badges":[
-        "In_Stock",
-        "Sold_as_a_set"
-    ]
+    "id": 540978
 }'&gt;&lt;/nap-product&gt;
                     </code></pre></div>
                 </section>
@@ -158,8 +221,48 @@
 					</aside>
 				</section>
 
+                <!-- Testing -->
+                <section>
+                    <h1>Testing</h1>
+                </section>
+
+                <!-- Build -->
+                <section>
+                    <h1>Production-ify</h1>
+                </section>
+
+                <!-- Structured Data -->
+                <section>
+                    <h1>Structured Data</h1>
+                </section>
+
+                <!-- Monitoring -->
+                <section>
+                    <h1>Does it work?</h1>
+                </section>
+
+                <!-- Gotchas -->
+                <section>
+                    <h1>Gotchas</h1>
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <h1>Coming Soon...</h1>
+                </section>
+
+                <!-- Resources -->
+                <section>
+                    <h1>Resources</h1>
+                </section>
+
+                <!-- Shall we show it? -->
+                <section>
+                    <h1>The page!</h1>
+                </section>
+
 				<!-- Example of nested vertical slides -->
-				<section>
+				<!-- <section>
 					<section>
 						<h2>Vertical Slides</h2>
 						<p>Slides can be nested inside of each other.</p>
@@ -263,7 +366,7 @@ function linkify( selector ) {
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
-				</section>
+				</section> -->
 
 			</div>
 
