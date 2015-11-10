@@ -32,7 +32,7 @@ D.Bod spiel - DB
 Mid way through project - bit risky (browser support) - MG
 
 Components - show them. - MG + RG
-- Price -> upsell - RG
+- Price -> Product - RG
 - HTWI, nap-live, forms, wishlist - MG
 
 Bower module (build, Vulcanise etc) - RG
@@ -48,7 +48,7 @@ Gotchas: - MG
 - Safari CORS Hell
 - IE11 - Only options in <select> / 
 - WebComponentReady - which is part of polyfill
-
+- Polyfil can be complex and can caused unresolved style jumping - see video
 Whats next: - RG
 - Polyfill - conditional
 - Perf testing
