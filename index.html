@@ -52,7 +52,7 @@
                         <span>Robin Glen <a class="handle" href="https://twitter.com/arielwithlegs">@arielwithlegs</a></span>
                     </div>
                     <div class="mugshot">
-                        <img width="200" height="200" src="/images/furniture/dbod.jpeg">
+                        <img width="200" height="200" src="/images/furniture/dbod.png">
                         <span>David Boddy <a class="handle" href="https://twitter.com/threetwotwo">@threetwotwo</a></span>
                     </div>
                 </section>
@@ -157,7 +157,37 @@
     }'&gt;
 &lt;/nap-product-price&gt;
 					</code></pre></div>
+					<aside class="notes">
+						<ul>
+							<li>Pass object as string into attribute, this can be done via
+								<ul>
+									<li>Written into mark up</li>
+									<li>Passed to JS as object</li>
+								</ul>
+							</li>
+							<li>Smallest reuseable component</li>
+							<li>Why?
+								<ul>
+									<li>Completely self contained</li>
+									<li>Boring and saves dev time</li>
+								</ul>
+							</li>
+							<li>Show mark up<li>
+						</ul>
+					</aside>
 				</section>
+
+                <!-- NAP Product Price -->
+                <section>
+                    <img height="600" src="/images/components-demo/price-shadow-dom.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
+                            <li>Conditions inside templates</li>
+                            <li>Schema tags built into component</li>
+                        </ul>
+                    </aside>
+                </section>                
 
                 <!-- NAP Product -->
                 <section data-background="#ffffff">
@@ -186,7 +216,32 @@
     "id": 540978
 }'&gt;&lt;/nap-product&gt;
                     </code></pre></div>
+                    <aside class="notes">
+						<ul>
+							<li>Includes nap-price component</li>
+							<li>Has interactions included, show rollover</li>
+							<li>Includes meta data about image</a>
+							<li>Show mark up
+								<ul>
+									<li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
                 </section>
+
+                <!-- NAP Product Price -->
+                <section>
+                    <img height="800" src="/images/components-demo/product-shadow-dom.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>more meta data tags</li>
+                            <li>Here is a product component that nests price</li>
+                        </ul>
+                    </aside>
+                </section>   
+
+                <!-- These are more complex using libs -->
 
 				<!-- Upsell module -->
 				<section data-background="#ffffff">
@@ -196,6 +251,19 @@
 &lt;/nap-product-upsell&gt;
 					</code></pre>
 				</section>
+
+                <!-- NAP Product Price -->
+                <section>
+                    <img height="700" src="/images/components-demo/upsell-shadow-dom.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Complex collection</li>
+                            <li>Polymer elements - matt will talk about</li>
+                        </ul>
+                    </aside>
+                </section>   
+
+                <!-- MATT -->
 
                 <!-- HTWI module -->
                 <section data-background="#ffffff">
@@ -252,9 +320,26 @@
                     <h1>Production-ify</h1>
                 </section>
 
+                <!-- Build -->
+                <section>
+                    <h2>Vulcanize</h2>
+                    <h2>Grunt</h2>
+                    <h2>Bundles</h2>
+                    <h2>Dist</h2>
+                    <h2>Bower</h2>
+                    <h2>Node service for demo</h2>
+                </section>
+
                 <!-- Structured Data -->
                 <section>
                     <h1>Structured Data</h1>
+                </section>
+
+                <!-- Structured Data -->
+                <section>
+                    <h2>Issues</h2>
+                    <h2>Structure data testing tool</h2>
+                    <h2>SEO</h2>
                 </section>
 
                 <!-- Monitoring -->
@@ -270,11 +355,20 @@
                 <!-- What's next -->
                 <section>
                     <h1>Coming Soon...</h1>
+					- Polyfill - conditional
+					- Perf testing
+					- Polyserve
+					- Seed-elements for starting - move to versioning each element - don’t bundle in the bower module.
+					- Skeleton CSS / Unresolved styles
                 </section>
 
                 <!-- Resources -->
                 <section>
                     <h1>Resources</h1>
+                    - Slack
+					- Polycasts YouTube
+					- Polymer docs
+					- Twitter - Eric, Rob etc
                 </section>
 
                 <!-- Shall we show it? -->
