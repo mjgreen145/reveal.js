@@ -11,8 +11,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background: #000;
+  background-color:#000; }
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -50,7 +50,11 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-family: Chronicle Display Light;
+  color: #fff;
+  font-size: 70px;
+  letter-spacing: 0px;
+}
 
 .reveal h2 {
   font-size: 1.6em; }
@@ -286,4 +290,7 @@ body {
 .mugshot img {
   border-radius: 100px;
   overflow: hidden;
+}
+.controls {
+  display: none !important;
 }
