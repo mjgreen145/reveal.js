@@ -57,6 +57,7 @@ Gotchas: - MG
 - IE11 - Only options in <select> / 
 - WebComponentReady - which is part of polyfill
 - Polyfil can be complex and can caused unresolved style jumping - see video
+
 Whats next: - RG
 - Polyfill - conditional
 - Perf testing
