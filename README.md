@@ -1,6 +1,14 @@
+# About
+
+A fork of reveal JS, hacked and butchered to make a slideshow for Polymer In Production.
+
+Need to NAP-ify the styles. 
+
 # Instructions
 
+### How set up
 
+`npm install`
 
 ### How to run
 
