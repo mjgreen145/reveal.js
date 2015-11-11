@@ -60,12 +60,13 @@ When interacting with the components, focus gets put on the iframes, so need to 
 - Polyfil can be complex and can caused unresolved style jumping - see video
 
 ***Whats next: - RG***
-
+- build was probably wrong
 - Polyfill - conditional
 - Perf testing
 - Polyserve
 - Seed-elements for starting - move to versioning each element - don’t bundle in the bower module.
 - Skeleton CSS / Unresolved styles
+- repo per element - better build, test and versioning
 
 ***Resources - RG***
 
@@ -73,5 +74,6 @@ When interacting with the components, focus gets put on the iframes, so need to 
 - Polycasts YouTube
 - Polymer docs
 - Twitter - Eric, Rob etc
+https://elements.polymer-project.org/
 
 ***Demo the actual page! - DB***

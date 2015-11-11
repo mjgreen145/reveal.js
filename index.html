@@ -263,6 +263,11 @@
 					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;nap-live&gt;&lt;/nap-live&gt;
 					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Real activity</li>
+                        </ul>
+                    </aside>
 				</section>
 
                 <!-- NAP Forms -->
@@ -299,15 +304,89 @@
                     <h1>Production-ify</h1>
                 </section>
 
-                <!-- Build -->
                 <section>
                     <h2>Vulcanize</h2>
-                    <h2>Grunt</h2>
-                    <h2>Bundles</h2>
-                    <h2>Dist</h2>
-                    <h2>Bower</h2>
-                    <h2>Node service for demo</h2>
+                    <p>Inline and package your components</p>
+                    <a href="https://github.com/polymer/vulcanize">vulcanize</a>
+                    <aside class="notes">
+                        <ul>
+                        <li>Made redundant by HTTP2</li>
+                        </ul>
+                    </aside>
                 </section>
+               
+                <section>
+                    <h3>How can I use it</h3>
+                    <ul>
+                        <li>CLI</li>
+                        <li>JS</li>
+                        <li>Task runners
+                            <ul>
+                                <li><a href="https://www.npmjs.com/package/grunt-vulcanize">Grunt</a></li>
+                                <li><a href="https://www.npmjs.com/package/gulp-vulcanize">Gulp</a></li>
+                                <li><a href="https://www.npmjs.com/package/broccoli-vulcanize">Broccoli</a></li>
+                            </ul>
+                    </ul>
+                </section> 
+
+                <section>
+                    <h3>Other tools</h3>
+                    <ul>
+                        <li>CLI</li>
+                        <li>JS</li>
+                        <li>Task runners
+                            <ul>
+                                <li><a href="https://www.npmjs.com/package/grunt-vulcanize">Grunt</a></li>
+                                <li><a href="https://www.npmjs.com/package/gulp-vulcanize">Gulp</a></li>
+                                <li><a href="https://www.npmjs.com/package/broccoli-vulcanize">Broccoli</a></li>
+                            </ul>
+                    </ul>
+                </section> 
+
+                <section>
+                    <h3>How did we use it?</h3>
+                    <h4>Bundles</h4>
+                    <span>Collection of components wrapped together</span>
+                     <img height="200" src="/images/production-ify/global.png">
+                    <h4>Pages</h4>
+                    <span>Collection of components and bundles for a specfic page</span>
+                    <img height="100" src="/images/production-ify/product-page.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Global loaded on all pages</li>
+                            <li>Page loaded on specific pages</li>
+                        </ul>
+                    </aside>                    
+                </section> 
+
+                <section>
+                    <h3>How do we use import it?</h3>
+                    <img height="200" src="/images/furniture/bower-logo.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Polymer team use Bower so we did the same</li>
+                            <li>Hashmap dist files and cache forever</li>
+                        </ul>
+                    </aside>                                       
+                </section> 
+
+                <section>
+                    <h3>Some other tools</h3>
+                    <ul>
+                    <li><a href="https://github.com/Polymer/hydrolysis">hydrolysis</a></li>
+                    <li><a href="https://github.com/PolymerLabs/crisper">crisper</a></li>
+                    <li><a href="https://github.com/PolymerLabs/polyserve">polyserve</a></li>
+                    <li><a href="https://github.com/PolymerLabs/polylint">polylint</a></li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>hydrolysis - Static analysis utilities, get api, build docs</li>
+                            <li>crisper - CSP compliance, security</li>
+                            <li>polyserve - serve and demo your components</li>
+                            <li>polylint - serve and demo your components</li>
+                        </ul>
+                    </aside>                                       
+                </section> 
 
                 <!-- Structured Data -->
                 <section>
