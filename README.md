@@ -61,12 +61,13 @@ When interacting with the components, focus gets put on the iframes, so need to 
 
 ***Whats next: - RG***
 - build was probably wrong
+- repo per element - better build, test and versioning
 - Polyfill - conditional
 - Perf testing
 - Polyserve
 - Seed-elements for starting - move to versioning each element - don’t bundle in the bower module.
 - Skeleton CSS / Unresolved styles
-- repo per element - better build, test and versioning
+
 
 ***Resources - RG***
 

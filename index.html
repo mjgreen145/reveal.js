@@ -176,19 +176,7 @@
 						</ul>
 					</aside>
 				</section>
-
-                <!-- NAP Product Price -->
-                <section>
-                    <img height="600" src="/images/components-demo/price-shadow-dom.png">
-                    <aside class="notes">
-                        <ul>
-                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
-                            <li>Conditions inside templates</li>
-                            <li>Schema tags built into component</li>
-                        </ul>
-                    </aside>
-                </section>                
-
+         
                 <!-- NAP Product -->
                 <section data-background="#ffffff">
                     <div style="width: 50%; float: left;">
@@ -230,16 +218,6 @@
 					</aside>
                 </section>
 
-                <!-- NAP Product Price -->
-                <section>
-                    <img height="800" src="/images/components-demo/product-shadow-dom.png">
-                    <aside class="notes">
-                        <ul>
-                            <li>more meta data tags</li>
-                            <li>Here is a product component that nests price</li>
-                        </ul>
-                    </aside>
-                </section>   
 
                 <!-- These are more complex using libs -->
 
@@ -411,14 +389,145 @@
 
                 <!-- Structured Data -->
                 <section>
-                    <h1>Structured Data</h1>
+                    <h1>Structured Data</h1>                                          
                 </section>
 
-                <!-- Structured Data -->
                 <section>
-                    <h2>Issues</h2>
-                    <h2>Structure data testing tool</h2>
-                    <h2>SEO</h2>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F60E.png?v=1.2.4">
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F62A.png?v=1.2.4">
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F60C.png?v=1.2.4">
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F600.png?v=1.2.4">
+                    <aside class="notes">
+                        <ul>
+                            <li>Difficult journey</li>
+                            <li>Firewall around search team (how it works)</li>
+                            <li>Tooling not ready</li>
+                        </ul>
+                    </aside>                    
+                </section>
+
+                <section>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F60E.png?v=1.2.4">
+                    <video controls>
+                      <source src="/videos/structured-data/polymer-summit.mp4" type="video/mp4">
+                    </video>
+                    <aside class="notes">
+                        <ul>
+                            <li>polymer perfect for components, do once, everyone gets it</li>
+                            <li>Hopefully Taylor won't mind this</li>
+                        </ul>
+                    </aside>
+                </section>
+
+
+                <section>
+                    <img height="800" src="/images/components-demo/product-shadow-dom.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
+                            <li>Added schema tags</li>
+                            <li>When released we saw errors in webmaster tools</li>
+                        </ul>
+                    </aside>                      
+                </section>
+
+                <section>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
+                    <img height="439" src="/images/structured-data/structured-data-url-592505.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Run the tests from web master tools on url</li>
+                            <li>Error</li>
+                        </ul>
+                    </aside>                      
+                </section>
+
+                <section>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
+                    <img height="439" src="/images/structured-data/structured-data-body-592505.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Copy body from dev tools</li>
+                            <li>all good</li>
+                        </ul>
+                    </aside>                      
+                </section>
+
+                <section>
+                    <h1>Why?</h1>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F62A.png?v=1.2.4">
+                    <aside class="notes">
+                        <ul>
+                            <li>Structered data tool understands rendered components (body)</li>
+                            <li>Structured tools doesn't render polymer components (url)</li>
+                            <li>Google search needs to index pages, can take days</li>
+                            <li>Polyfill was not rendering components in time for google bot</li>
+                        </ul>
+                    </aside>                                                                 
+                </section>
+
+                <section>
+                    <h1>Call in the big guns</h1>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F60C.png?v=1.2.4">
+                    <br>
+                    <img height="150" src="/images/structured-data/email.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Polymer team were amazing</li>
+                            <li>updates to webcomponentsjs</li>
+                        </ul>
+                    </aside>                                                                 
+                </section>
+
+                <section>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F600.png?v=1.2.4">
+                    <br>
+                    <img height="150" src="/images/structured-data/graph.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Errors started to drop</li>
+                            <li>Pages with structured data increased</li>
+                        </ul>
+                    </aside>                                                                 
+                </section>
+
+                <section>
+                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F4A1.png?v=1.2.4">                                                               
+                </section>
+
+                <section>
+                    <img height="450" src="/images/structured-data/xhr-structured-data-body-592505.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Looks like clientside</li>
+                            <li>network tab - yup xhr</li>
+                            <li>Full data object including errors array!</li>
+                            <li>can post from a different domain?</li>
+                        </ul>
+                    </aside>                                                                           
+                </section>
+
+                <section>
+                    <img height="350" src="/images/structured-data/postman-check.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Nice</li>
+                            <li>what can we use this for?</li>
+                        </ul>
+                    </aside>                                                                           
+                </section>
+
+                <section>
+                    <h1>Hacking funtional tests</h1>
+                    <pre style="margin: 0; width: 100%;"><code class="java" data-trim>
+                    code here
+                    </code></pre>                    
+                    <aside class="notes">
+                        <ul>
+                            <li>SEO functional tests!</li>
+                        </ul>
+                    </aside>                                                                           
                 </section>
 
                 <!-- Monitoring -->
@@ -444,10 +553,18 @@
                 <!-- Resources -->
                 <section>
                     <h1>Resources</h1>
-                    - Slack
-					- Polycasts YouTube
-					- Polymer docs
-					- Twitter - Eric, Rob etc
+                    <ul>
+                    <li><a href="https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html">Polymer docs</a></li>
+                    <li><a href="https://elements.polymer-project.org/">Elements catalog</a></li>
+                    <li><a href="https://polymer.slack.com/">Slack</a></li>
+					<li><a href="https://www.youtube.com/watch?v=m1hFhDYDY6o&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN">Polycasts YouTube</a></li>
+					<li>Twitter
+                    <ul>
+                        <li><a href="https://twitter.com/polymer">@polymer</a></li>
+                        <li><a href="https://twitter.com/ebidel">@ebidel</a></li>
+                        <li><a href="https://twitter.com/rob_dodson">@rob_dodson</a></li>
+                        <li><a href="https://twitter.com/TaylorTheSavage">@TaylorTheSavage</a></li>
+                    </ul>
                 </section>
 
                 <!-- Shall we show it? -->
