@@ -7,8 +7,8 @@ based on dark.css by Ivan Sagalaev
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #3f3f3f;
-  color: #dcdcdc;
+  background: #333333;
+  color: #cccccc;
   -webkit-text-size-adjust: none;
 }
 
@@ -21,7 +21,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-request,
 .hljs-status,
 .clojure .hljs-attribute {
-  color: #e3ceab;
+  color: #C27A7A;
 }
 
 .django .hljs-template_tag,
@@ -67,7 +67,7 @@ based on dark.css by Ivan Sagalaev
 .nginx .hljs-built_in,
 .tex .hljs-command,
 .hljs-prompt {
-  color: #efef8f;
+  color: #ffffff;
 }
 
 .dos .hljs-winutils,
@@ -92,7 +92,7 @@ based on dark.css by Ivan Sagalaev
 .apache .hljs-cbracket,
 .tex .hljs-formula,
 .coffeescript .hljs-attribute {
-  color: #cc9393;
+  color: #BBBBBB;
 }
 
 .hljs-shebang,
