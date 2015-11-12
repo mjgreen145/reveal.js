@@ -36,57 +36,102 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
+            <!-- MATT START -->
+
                 <!-- Title -->
 				<section>
-					<h1>Polymer In Production</h1>
+					<h1>polymer in production</h1>
 				</section>
 
                 <!-- Who are we? -->
-                <section style="text-align: left;">
+                <section class="profile" data-background="#e80042">
                     <div class="mugshot">
-                        <img width="200" height="200" src="/images/furniture/matt.jpeg">
-                        <span>Matt Green <a class="handle" href="https://twitter.com/mjgreen145">@mjgreen145</a></span>
+                        <img src="/images/furniture/matt.jpeg">
+                        <h3>Matt Green</h3>
+                        <a class="handle" href="https://twitter.com/mjgreen145">@mjgreen145</a>
                     </div>
                     <div class="mugshot">
-                        <img width="200" height="200" src="/images/furniture/robin.jpeg">
-                        <span>Robin Glen <a class="handle" href="https://twitter.com/arielwithlegs">@arielwithlegs</a></span>
+                        <img src="/images/furniture/robin.jpeg">
+                        <h3>Robin Glen</h3>
+                        <a class="handle" href="https://twitter.com/arielwithlegs">@arielwithlegs</a>
                     </div>
                     <div class="mugshot">
-                        <img width="200" height="200" src="/images/furniture/dbod.png">
-                        <span>David Boddy <a class="handle" href="https://twitter.com/threetwotwo">@threetwotwo</a></span>
+                        <img src="/images/furniture/dbod.png">
+                        <h3>David Boddy</h3>
+                        <a class="handle" href="https://twitter.com/threetwotwo">@threetwotwo</a>
                     </div>
                 </section>
 
                 <!-- Who is NAP -->
                 <section>
                     <div>
-                        <img src="/images/furniture/net-a-porter.svg">
+                        <img src="/images/furniture/net-a-porter.svg" width="70%">
                     </div>
                 </section>
 
-                <!-- Landscape of NAP -->
+                <!-- MATT END -->
+
+                <!-- DAVID START -->
+
+                <!-- Collaboration -->
                 <section>
-                    <h1>Landscape at Net-A-Porter</h1>
+                    <h1>1. the power of collaboration</h1>
                 </section>
 
-                <!-- What kicked it off -->
+                <!-- Insight -->
                 <section>
-                    <h1>What kicked it off</h1>
+                    <h1>2. insight</h1>
+                </section>
+
+                <!-- Influencers -->
+                <section class="profile" data-background="#e80042">
+                    <div class="mugshot">
+                        <img src="/images/insight/jeremy.png">
+                        <h3>Jermery Keith</h3>
+                        <a class="handle" href="https://twitter.com/adactio">@mdactio</a>
+                    </div>
+                    <div class="mugshot">
+                        <img src="/images/insight/samantha.jpeg">
+                        <h3>Samantha Warren</h3>
+                        <a class="handle" href="https://twitter.com/samanthatoy">@samanthatoy</a>
+                    </div>
+                </section>
+
+                <!-- Atomic Design -->
+                <section data-background="#e80042">
+                    <div>
+                        <img src="/images/insight/atomic-ui-01.jpg" >
+                    </div>
                 </section>
 
                 <!-- Identify the opportunity -->
                 <section>
-                    <h1>Identify the opportunity</h1>
+                    <h1>opportunity</h1>
+                </section>
+
+                <!-- Fixed Width site -->
+                <section data-background="#e80042" data-background-transition="none">
+                    <div>
+                        <img src="/images/opportunity/condensed-container-01.jpg" >
+                    </div>
+                </section>
+
+                <!-- Browser Width -->
+                <section data-background="#e80042">
+                    <div>
+                        <img src="/images/opportunity/condensed-container-02.jpg" >
+                    </div>
                 </section>
 
                 <!-- Product Page -->
                 <section>
-                    <h1>Product page</h1>
+                    <h1>product page</h1>
                 </section>
 
                 <!-- Pivot -->
                 <section>
-                    <h1>The Turning Point</h1>
+                    <h1>the turning point</h1>
                     <aside class="notes">
 	                    <ul>
 	                    	<li>Attended Google I/O - heard about Polymer 1.0</li>
@@ -97,8 +142,8 @@
                 </section>
 
                 <!-- Browser Support -->
-                <section>
-                    <img src="/images/pivot/browser-support.png" />
+                <section data-background="#e80042">
+                    <img src="/images/pivot/browser-support.png" class="shadow" />
                     <aside class="notes">
 	                    <ul>
 	                    	<li>Browser support currently poor</li>
@@ -127,7 +172,7 @@
                 </section>
 
 				<!-- NAP Product Price -->
-				<section data-background="#ffffff">
+				<section data-background="#eeeeee">
 					<div style="width: 50%; float: left;">
 					<iframe height="50" width="100%" src="/demo/nap-product/nap-product-price.html" scrolling="no"></iframe>
 					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
@@ -175,8 +220,9 @@
 							<li>Show mark up<li>
 						</ul>
 					</aside>
-				</section>
-         
+				</section>          
+
+
                 <!-- NAP Product -->
                 <section data-background="#ffffff">
                     <div style="width: 50%; float: left;">
@@ -218,6 +264,29 @@
 					</aside>
                 </section>
 
+                <!-- NAP Product Price -->
+                <section data-background="#eeeeee">
+                    <img height="600" src="/images/components-demo/product-price-01.jpg">
+                    <aside class="notes">
+                        <ul>
+                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
+                            <li>Conditions inside templates</li>
+                            <li>Schema tags built into component</li>
+                        </ul>
+                    </aside>
+                </section> 
+
+                <!-- NAP Product Price -->
+                <section data-background="#eeeeee">
+                    <img height="600" src="/images/components-demo/product-price-02.jpg">
+                    <aside class="notes">
+                        <ul>
+                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
+                            <li>Conditions inside templates</li>
+                            <li>Schema tags built into component</li>
+                        </ul>
+                    </aside>
+                </section>   
 
                 <!-- These are more complex using libs -->
 
@@ -228,18 +297,15 @@
 &lt;nap-product-upsell pids='[508770, 543952, 540978, 538739, 538736, 538734]'&gt;
 &lt;/nap-product-upsell&gt;
 					</code></pre>
-				</section>
-
-                <!-- NAP Product Price -->
-                <section>
-                    <img height="700" src="/images/components-demo/upsell-shadow-dom.png">
                     <aside class="notes">
                         <ul>
                             <li>Complex collection</li>
+                            <li>Just pids no product data, how do we get that?</li>
                             <li>Polymer elements - matt will talk about</li>
                         </ul>
                     </aside>
-                </section>   
+				</section>
+
 
                 <!-- MATT -->
 
@@ -303,8 +369,8 @@
                     <h1>Production-ify</h1>
                 </section>
 
-                <section>
-                    <h2>Vulcanize</h2>
+                <section class="statement">
+                    <h3>Vulcanize</h3>
                     <p>Inline and package your components</p>
                     <a href="https://github.com/polymer/vulcanize">vulcanize</a>
                     <aside class="notes">
@@ -343,13 +409,21 @@
                 </section> 
 
                 <section>
-                    <h3>How did we use it?</h3>
-                    <h4>Bundles</h4>
-                    <span>Collection of components wrapped together</span>
-                     <img height="200" src="/images/production-ify/global.png">
-                    <h4>Pages</h4>
-                    <span>Collection of components and bundles for a specfic page</span>
-                    <img height="100" src="/images/production-ify/product-page.png">
+                    <h3>Bundles</h3>
+                    <p>Collection of components wrapped together</p>
+                     <img height="300" src="/images/production-ify/global.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Global loaded on all pages</li>
+                            <li>Page loaded on specific pages</li>
+                        </ul>
+                    </aside>                    
+                </section>
+
+                <section>
+                    <h3>Pages</h3>
+                    <p>Collection of components and bundles for a specfic page</p>
+                    <img height="200" src="/images/production-ify/product-page.png">
                     <aside class="notes">
                         <ul>
                             <li>Global loaded on all pages</li>
@@ -358,8 +432,7 @@
                     </aside>                    
                 </section> 
 
-                <section>
-                    <h3>How do we use import it?</h3>
+                <section data-background="#e80042">
                     <img height="200" src="/images/furniture/bower-logo.png">
                     <aside class="notes">
                         <ul>
