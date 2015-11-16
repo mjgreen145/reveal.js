@@ -131,6 +131,7 @@ body {
 
 .reveal li{
   display: inline;
+  font-size: 0.8em;
   margin-right: 50px;
 }
 .reveal li:last-child{
@@ -234,12 +235,12 @@ body {
 .reveal a {
   color: #ffffff;
   font-family: Avenir-Medium, gillsans-light, "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-decoration: none;
 }
 
 .reveal a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
