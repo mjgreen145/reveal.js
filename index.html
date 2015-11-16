@@ -217,7 +217,6 @@
 									<li>Boring and saves dev time</li>
 								</ul>
 							</li>
-							<li>Show mark up<li>
 						</ul>
 					</aside>
 				</section>          
@@ -265,28 +264,20 @@
                 </section>
 
                 <!-- NAP Product Price -->
-                <section data-background="#eeeeee">
-                    <img height="600" src="/images/components-demo/product-price-01.jpg">
-                    <aside class="notes">
-                        <ul>
-                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
-                            <li>Conditions inside templates</li>
-                            <li>Schema tags built into component</li>
-                        </ul>
-                    </aside>
-                </section> 
+                <section  data-background="/images/components-demo/product-price-01.jpg">
+                </section>   
 
                 <!-- NAP Product Price -->
-                <section data-background="#eeeeee">
-                    <img height="600" src="/images/components-demo/product-price-02.jpg">
+                <section  data-background="/images/components-demo/product-price-02.jpg">
                     <aside class="notes">
                         <ul>
                             <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
                             <li>Conditions inside templates</li>
-                            <li>Schema tags built into component</li>
+                            <li>Schema tags built into component, more later</li>
                         </ul>
                     </aside>
                 </section>   
+
 
                 <!-- These are more complex using libs -->
 
@@ -480,14 +471,13 @@
                     </video>
                     <aside class="notes">
                         <ul>
-                            <li>polymer perfect for components, do once, everyone gets it</li>
-                            <li>Hopefully Taylor won't mind this</li>
+                            <li>Polymer summit</li>
                         </ul>
                     </aside>
                 </section>
 
 
-                <section data-background="#eeeeee">
+                <section data-background="#eeeeee" data-background="/images/components-demo/product-shadow-dom.png">
                     <img height="600" src="/images/components-demo/product-shadow-dom.png">
                     <aside class="notes">
                         <ul>
@@ -531,7 +521,7 @@
                     <aside class="notes">
                         <ul>
                             <li>Structered data tool understands rendered components (body)</li>
-                            <li>Structured tools doesn't render polymer components (url)</li>
+                            <li>Structured data tool doesn't render polymer components (url)</li>
                             <li>Google search needs to index pages, can take days</li>
                             <li>Polyfill was not rendering components in time for google bot</li>
                         </ul>
@@ -550,6 +540,7 @@
                         <ul>
                             <li>Polymer team were amazing</li>
                             <li>updates to webcomponentsjs</li>
+                            <li>Thanks to taylor savage for all his help</li>
                         </ul>
                     </aside>                                                                 
                 </section>
@@ -622,14 +613,114 @@
                 <!-- What's next -->
                 <section>
                     <h1>Coming Soon...</h1>
+                    <aside class="notes">
+                        <ul>
+                            <li>Things we want to do</li>
+                            <li>Things we haven't done</li>
+                        </ul>
+                    </aside> 
+                </section>
+                <!-- What's next -->
+                <section>
+                    <h2>Conditionally polyfill</h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>Don't need to polyfill chrome</li>
+                            <li>Can use shadow dom over shadey</li>
+                        </ul>
+                    </aside> 
                 </section>
 
+                <!-- What's next -->
                 <section>
-                    - Polyfill - conditional
-                    - Perf testing
-                    - Polyserve
-                    - Seed-elements for starting - move to versioning each element - don’t bundle in the bower module.
-                    - Skeleton CSS / Unresolved styles                
+                    <h2>Performance monitoring</h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>Matt talked about does it work</li>
+                            <li>We want to know how well it is working
+                            <ul>
+                                <li>Time to render - RUM</li>
+                                <li>Asset download - RUM</li>
+                                <li>Memory useage in CI</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </aside> 
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <h2>Optimize build</h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>Use polyserve - keep standards</li>
+                            <li>Rewrite elements using seed elements
+                                <ul>
+                                    <li>again more consistancy</li>
+                                    <li>Free documentation and demo</li>
+                                    <li>move each element into own repo - better version control</li>
+                                    <li>make new bundle / page approach based on repos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside> 
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <h2>Skeleton CSS / Unresolved styles</h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>typically used for dynamic content
+                                <ul>
+                                    <li>big win for perceived performance</li>
+                                    <li>used by etsy, google, guardian etc...</li>
+                                </ul>
+                            </li>
+                            <li>styles before webcomponent is ready</li>
+                            <li>We do this to stop the following</li>
+                        </ul>
+                    </aside>           
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <video width="500" style="top:0px;"controls>
+                      <source src="/videos/polyfil-performance/cache-polymer-safari.mp4" type="video/mp4">   
+                    </video>
+                    <aside class="notes">
+                        <ul>
+                            <li>Safari - cached assets</li>
+                            <li>jumps are also polyfill polyfilling</li>
+                            <li>Throttled api calls - bottom upsells slowed</li>
+                        </ul>
+                    </aside>                       
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <video width="500" style="top:0px;"controls>
+                      <source src="/videos/polyfil-performance/uncache-polymer-safari.mp4" type="video/mp4">   
+                    </video>
+                    <aside class="notes">
+                        <ul>
+                            <li>blurgh gross!!</li>
+                            <li>worst case scenario, throttled everything</li>
+                            <li>Safari - uncached assets</li>
+                            <li>jumps are also polyfill polyfilling</li>
+                            <li>Throttled api calls - bottom upsells slowed</li>
+                        </ul>
+                    </aside>                       
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <h3>Blurgh... gross, what can you do about that?</h3>
+                    <ul>
+                        <ol class="fragment">Conditionally load polyfill but before web components in DOM</ol>
+                        <ol class="fragment">Unresolved styles for before web components ready</ol>
+                        <ol class="fragment">Shadow DOM is coming to Safari and IE (soon...ish)</ol>
+                    </ul>
                 </section>
 
                 <!-- Resources -->
@@ -638,12 +729,14 @@
                 </section>
 
                 <section>
+                    <h3>Useful links</h3>
                     <ul>
-                    <li><a href="https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html">Polymer docs</a></li>
-                    <li><a href="https://elements.polymer-project.org/">Elements catalog</a></li>
-                    <li><a href="https://polymer.slack.com/">Slack</a></li>
-					<li><a href="https://www.youtube.com/watch?v=m1hFhDYDY6o&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN">Polycasts YouTube</a></li>
-					<li>
+                    <ol><a href="https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html">Polymer docs</a></ol>
+                    <ol><a href="https://elements.polymer-project.org/">Elements catalog</a></ol>
+                    <ol><a href="https://polymer.slack.com/">Slack</a></ol>
+					<ol><a href="https://www.youtube.com/watch?v=m1hFhDYDY6o&olst=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN">Polycasts YouTube</a></ol>
+					<ol><a href="http://webcomponents.org/">webcomponents.org</a></ol>
+                    <ul>
                 </section>
 
                 <section>
