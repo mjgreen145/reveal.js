@@ -24,7 +24,7 @@ When interacting with the components, focus gets put on the iframes, so need to 
 
 # Notes:
 
-**Web Components, At Scale**
+**Polymer In Production**
 
 **Sections**
 
@@ -43,9 +43,9 @@ When interacting with the components, focus gets put on the iframes, so need to 
 - Price -> Product - RG
 - HTWI, nap-live, forms, wishlist - MG
 
-***Bower module (build, Vulcanise etc) - RG***
-
 ***Unit testing (WCT, test-fixture) -MG***
+
+***Bower module (build, Vulcanise etc) - RG***
 
 ***Structured Data - Google DevRel / Testing - RG***
 
