@@ -839,16 +839,46 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section>
 
                 <section>
-                    <h1>hacking functional tests</h1>
+                    <h1>hacking seo testing</h1>
+                    <aside class="notes">
+                        <ul>
+                            <li>Selenium Webdriver and jUnit</li>
+                            <li>In CI pipline after build and deploy, seperate from integration</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="java" data-trim>
-                    code here
+    @Test
+    public void markupTest() {
+        JsonArray tripleGroups = getJsonElements();
+        for (int i = 0; i < tripleGroups.size(); i++) {
+            JsonObject errors = tripleGroups.get(i).getAsJsonObject().get("errorsByOwner").getAsJsonObject();
+            assertTrue("Tag analysis failed: " + Arrays.toString(errors.entrySet().toArray()),errors.entrySet().isEmpty() );
+
+            JsonObject warnings = tripleGroups.get(i).getAsJsonObject().get("warningsByOwner").getAsJsonObject();
+            if (!warnings.entrySet().isEmpty())
+                fail("Tag analysis failed: " + Arrays.toString(warnings.entrySet().toArray()));
+        }
+    }
+
+    private JsonArray getJsonElements() {
+        String dom = ((JavascriptExecutor) browser.driver).executeScript("return document.documentElement.outerHTML").toString();
+
+        NameValuePair html = new BasicNameValuePair("html", dom);
+
+        String json = HttpFunctions.httpsPost(URI.create("https://structured-data-testing-tool.developers.google.com/sdtt/web/validate"), newArrayList(html));
+
+        JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
+        return jsonObject.getAsJsonArray("tripleGroups");
+    }
                     </code></pre>
                     <aside class="notes">
                         <ul>
-                            <li>SEO functional tests!</li>
+                            <li>junit test extracts the dom, posts to Structured Data Tool</li>
+                            <li>parse response and assert whether there are any errors or warnings</li>
+                            <li>Thanks to Adela</li>
                         </ul>
                     </aside>
                 </section>
