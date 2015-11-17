@@ -9,19 +9,5 @@
     font-family: 'Chronicle';
     src: url('Chronicle-FineItalic.otf') format("opentype");
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Chronicle';
-    src: url('ChronicleDisp-Light.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Chronicle';
-    src: url('ChronicleDisp-LightItal.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }

@@ -230,9 +230,9 @@
                 </section>
 
                 <!-- Pivot -->
-                <section>
+                <section data-background="#e80042">
                     <div>
-                        <img src="/images/pivot/polymer1.0.png" >
+                        <img src="/images/pivot/polymer1.0.png" style="width:270px">
                     </div>
                     <aside class="notes">
 	                    <ul>
@@ -278,7 +278,7 @@
                 </section>
 
 				<!-- NAP Product Price -->
-				<section data-background="#eeeeee">
+				<section data-background="#ffffff">
 					<div style="width: 50%; float: left;">
 					<iframe height="50" width="100%" src="/demo/nap-product/nap-product-price.html" scrolling="no"></iframe>
 					<pre style="margin: 0; width: 100%;"><code class="html" data-trim>
@@ -370,11 +370,13 @@
                 </section>
 
                 <!-- NAP Product Price -->
-                <section  data-background="/images/components-demo/product-price-01.jpg">
-                </section>   
+                <section data-background="#eeeeee">
+                    <img height="600" src="/images/components-demo/product-price-01.jpg">
+                </section>
 
                 <!-- NAP Product Price -->
-                <section  data-background="/images/components-demo/product-price-02.jpg">
+                <section data-background="#eeeeee">
+                    <img height="600" src="/images/components-demo/product-price-02.jpg">
                     <aside class="notes">
                         <ul>
                             <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
@@ -382,8 +384,7 @@
                             <li>Schema tags built into component, more later</li>
                         </ul>
                     </aside>
-                </section>   
-
+                </section>
 
                 <!-- These are more complex using libs -->
 
@@ -491,7 +492,7 @@
                 </section>
 
                 <section>
-                    <h1>Web Component Tester</h1>
+                    <h1>web component tester</h1>
                     <aside class="notes">
 						<ul>
 							<li>Tool created by the Polymer team</li>
@@ -512,7 +513,7 @@
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;test-fixture id="buttonTest"&gt;
   &lt;template&gt;
@@ -527,7 +528,7 @@
 					</aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="js" data-trim>
 describe('&lt;nap-wishlist-button&gt;', function () {
   var button;
@@ -546,7 +547,7 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section>
 
                 <section data-background="#e80042">
-                    <img src="/images/testing/saucelabs-logo.png" class="shadow" />
+                    <img src="/images/testing/saucelabs-logo.png" style="width:500px" />
                     <aside class="notes">
                         <ul>
                             <li>We use SauceLabs to carry out automatec cross-browser testing</li>
@@ -578,16 +579,17 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section>
                
                 <section>
-                    <h3>How can I use it</h3>
+                <!--<p>how can I use it</p>-->
+                    <p>tools to use</p>
                     <ul>
-                        <li>CLI</li>
-                        <li>JS</li>
-                        <li>Task runners</li>
+                        <li><a href="https://commons.apache.org/proper/commons-cli/javadocs/api-release/index.html">CLI</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li><a href="http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/">Task Runners</a></li>
                     </ul>
                 </section>
 
                 <section>
-                    <h3>task runners</h3>
+                    <p>task runners</p>
                     <ul>
                         <li><a href="https://www.npmjs.com/package/grunt-vulcanize">Grunt</a></li>
                         <li><a href="https://www.npmjs.com/package/gulp-vulcanize">Gulp</a></li>
@@ -595,10 +597,10 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </ul>
                 </section> 
 
-                <section data-background="#e80042">
-                    <h3>Bundles</h3>
+                <section>
+                    <!-- <h3>Bundles</h3> -->
                      <img height="300" src="/images/production-ify/global.png">
-                    <p>Collection of components wrapped together</p>
+                    <p>components wrapped together</p>
                     <aside class="notes">
                         <ul>
                             <li>Global loaded on all pages</li>
@@ -606,10 +608,10 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </aside>                    
                 </section>
 
-                <section  data-background="#e80042">
-                    <h3>pages</h3>
+                <section>
+                    <!-- <h3>pages</h3> -->
                     <img height="180" src="/images/production-ify/product-page.png">
-                    <p>Collection of components and bundles for a specfic page</p>
+                    <p>components and bundles for a specfic page</p>
                     <aside class="notes">
                         <ul>
                             <li>Page loaded on specific pages</li>
@@ -628,7 +630,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section> 
 
                 <section>
-                    <h3>other production tools</h3>
+                <p>other production tools</p>
+                    <!-- <h3>other production tools</h3> -->
                     <ul>
                     <li><a href="https://github.com/Polymer/hydrolysis">hydrolysis</a></li>
                     <li><a href="https://github.com/PolymerLabs/crisper">crisper</a></li>
@@ -687,7 +690,7 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section>
 
 
-                <section data-background="#eeeeee" data-background="/images/components-demo/product-shadow-dom.png">
+                <section data-background="#eeeeee">
                     <img height="600" src="/images/components-demo/product-shadow-dom.png">
                     <aside class="notes">
                         <ul>
@@ -702,8 +705,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                    <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
                 </section>
 
-                <section data-background="#eeeeee">
-                    <img height="439" src="/images/structured-data/structured-data-url-592505.png">
+                <section data-background="#e80042">
+                    <img height="439" src="/images/structured-data/structured-data-url-592505.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Run the tests from web master tools on url</li>
@@ -712,8 +715,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </aside>                      
                 </section>
 
-                <section data-background="#eeeeee">
-                    <img height="439" src="/images/structured-data/structured-data-body-592505.png">
+                <section data-background="#e80042">
+                    <img height="439" src="/images/structured-data/structured-data-body-592505.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Copy body from dev tools</li>
@@ -745,7 +748,7 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 <section data-background="#e80042">
                     <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F60C.png?v=1.2.4">
                     <br>
-                    <img height="150" src="/images/structured-data/email.png">
+                    <img height="150" src="/images/structured-data/email.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Polymer team were amazing</li>
@@ -759,8 +762,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F600.png?v=1.2.4">
                 </section>
 
-                <section data-background="#eeeeee">
-                    <img height="240" src="/images/structured-data/graph.png">
+                <section data-background="#e80042">
+                    <img height="240" src="/images/structured-data/graph.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Errors started to drop</li>
@@ -773,8 +776,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F4A1.png?v=1.2.4">                                                               
                 </section>
 
-                <section data-background="#eeeeee">
-                    <img height="450" src="/images/structured-data/xhr-structured-data-body-592505.png">
+                <section data-background="#e80042">
+                    <img height="450" src="/images/structured-data/xhr-structured-data-body-592505.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Looks like clientside</li>
@@ -785,8 +788,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </aside>                                                                           
                 </section>
 
-                <section data-background="#eeeeee">
-                    <img height="350" src="/images/structured-data/postman-check.png">
+                <section data-background="#e80042">
+                    <img height="350" src="/images/structured-data/postman-check.png" class="shadow">
                     <aside class="notes">
                         <ul>
                             <li>Nice</li>
@@ -826,7 +829,7 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="hljs" data-trim>
 function checkForWebComponentsOnPage() {
 
@@ -886,7 +889,7 @@ function checkForWebComponentsOnPage() {
                 </section>
 
                 <section>
-                    <h1>1. Docs</h1>
+                    <h1>1. docs</h1>
                     <aside class="notes">
                         <ul>
                             <li>Docs in general are very good</li>
@@ -907,7 +910,7 @@ function checkForWebComponentsOnPage() {
                 </section>
 
                 <section>
-                    <h1>2. CORS <br/><span class="fragment">(Cross-Origin Really Sucks)</span></h1>
+                    <h1>2. CORS <br/><span class="fragment subhead">(Cross-Origin Really Sucks)</span></h1>
                     <aside class="notes">
                         <ul>
                             <li>All our assets are requested through a sub-domain, including HTML imports</li>
@@ -920,7 +923,7 @@ function checkForWebComponentsOnPage() {
                 </section>
 
                 <section>
-                    <h1>3. IE and the <br/>"parser-challenged elements"</h1>
+                    <h1>3. IE & "parser-challenged elements"</h1>
                     <aside class="notes">
                         <ul>
                             <li>There are certain elements which IE removes any dissallowed children nodes</li>
@@ -929,7 +932,7 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;select&gt;
   &lt;template is="dom-repeat" items="{{options}}"&gt;
@@ -944,7 +947,7 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;template is="dom-repeat" items="{{options}}"&gt;
   &lt;option value="{{item.value}}"&gt;{{item.name}}&lt;/option&gt;
@@ -958,7 +961,7 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0; width: 100%;"><code class="html" data-trim>
 &lt;select&gt;
   &lt;option template repeat="{{item in options}}" value="{{item.value}}"&gt;&lt;/option&gt;
@@ -983,8 +986,8 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
-                    <video controls style="width:45%;">
+                <section data-background="#e80042">
+                    <video controls style="width:42%" class="shadow">
                       <source src="/videos/polyfill-performance/uncache-polymer-safari.mp4" type="video/mp4">
                     </video>
                     <aside class="notes">
@@ -994,8 +997,8 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
-                    <video controls style="width:45%;">
+                <section data-background="#e80042">
+                    <video controls style="width:42%" class="shadow">
                       <source src="/videos/polyfill-performance/cache-polymer-safari.mp4" type="video/mp4">
                     </video>
                     <aside class="notes">
@@ -1005,7 +1008,7 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
-                <section>
+                <section data-background="#eeeeee">
                     <pre style="margin: 0 auto; width: 50%;"><code class="html" data-trim>
 &lt;my-element unresolved&gt;&lt;/my-element&gt;
                     </code></pre>
@@ -1034,7 +1037,7 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section>
-                    <h1>Coming Soon...</h1>
+                    <h1>coming soon...</h1>
                     <aside class="notes">
                         <ul>
                             <li>Things we want to do</li>
@@ -1044,7 +1047,7 @@ this.removeAttribute('unresolved');
                 </section>
                 <!-- What's next -->
                 <section>
-                    <h2>Conditionally polyfill</h2>
+                    <p>conditionally polyfill</p>
                     <aside class="notes">
                         <ul>
                             <li>Don't need to polyfill chrome</li>
@@ -1055,7 +1058,7 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section>
-                    <h2>Performance monitoring</h2>
+                    <p>performance monitoring</p>
                     <aside class="notes">
                         <ul>
                             <li>Matt talked about does it work</li>
@@ -1072,7 +1075,7 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section>
-                    <h2>Optimize build</h2>
+                    <p>optimize build</p>
                     <aside class="notes">
                         <ul>
                             <li>Use polyserve - keep standards</li>
@@ -1090,7 +1093,7 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section>
-                    <h2>Skeleton CSS / Unresolved styles</h2>
+                    <p>skeleton CSS / unresolved styles</p>
                     <aside class="notes">
                         <ul>
                             <li>typically used for dynamic content
@@ -1106,8 +1109,8 @@ this.removeAttribute('unresolved');
                 </section>
 
                 <!-- What's next -->
-                <section>
-                    <video width="500" style="top:0px;"controls>
+                <section data-background="#e80042">
+                    <video width="500px" style="top:0px;"controls class="shadow">
                       <source src="/videos/polyfil-performance/cache-polymer-safari.mp4" type="video/mp4">   
                     </video>
                     <aside class="notes">
@@ -1120,8 +1123,8 @@ this.removeAttribute('unresolved');
                 </section>
 
                 <!-- What's next -->
-                <section>
-                    <video width="500" style="top:0px;"controls>
+                <section data-background="#e80042">
+                    <video width="500px" style="top:0px;"controls class="shadow">
                       <source src="/videos/polyfil-performance/uncache-polymer-safari.mp4" type="video/mp4">   
                     </video>
                     <aside class="notes">
@@ -1137,11 +1140,14 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section>
-                    <h3>Blurgh... gross, what can you do about that?</h3>
+                    <p>Blurgh... gross, what can you do about that?</p>
+                </section>
+
+                <section>
                     <ul>
-                        <ol class="fragment">Conditionally load polyfill but before web components in DOM</ol>
-                        <ol class="fragment">Unresolved styles for before web components ready</ol>
-                        <ol class="fragment">Shadow DOM is coming to Safari and IE (soon...ish)</ol>
+                        <li>1. Conditionally load polyfill before web components in DOM</li></br></br>
+                        <li class="fragment">2. Unresolved styles for before web components ready</li></br></br>
+                        <li class="fragment">3. Shadow DOM is coming to Safari and IE (soon...ish)</li>
                     </ul>
                 </section>
 
@@ -1151,18 +1157,19 @@ this.removeAttribute('unresolved');
                 </section>
 
                 <section>
-                    <h3>Useful links</h3>
+                    <p>Useful links</p>
                     <ul>
-                    <ol><a href="https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html">Polymer docs</a></ol>
-                    <ol><a href="https://elements.polymer-project.org/">Elements catalog</a></ol>
-                    <ol><a href="https://polymer.slack.com/">Slack</a></ol>
-					<ol><a href="https://www.youtube.com/watch?v=m1hFhDYDY6o&olst=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN">Polycasts YouTube</a></ol>
-					<ol><a href="http://webcomponents.org/">webcomponents.org</a></ol>
+                    <li><a href="https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html">Polymer docs</a></li>
+                    <li><a href="https://elements.polymer-project.org/">Elements catalog</a></li>
+                    <li><a href="https://polymer.slack.com/">Slack</a></li>
+                    </br>
+					<li><a href="https://www.youtube.com/watch?v=m1hFhDYDY6o&olst=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN">Polycasts YouTube</a></li>
+					<li><a href="http://webcomponents.org/">webcomponents.org</a></li>
                     <ul>
                 </section>
 
                 <section>
-                    <h3>Twitter</h3>
+                    <p>Twitter</p>
                     <ul>
                     <li><a href="https://twitter.com/polymer">@polymer</a></li>
                     <li><a href="https://twitter.com/ebidel">@ebidel</a></li>
