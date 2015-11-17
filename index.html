@@ -994,6 +994,9 @@ function checkForWebComponentsOnPage() {
                     </aside>
                 </section>
 
+                <section>
+                    <h1>4. Async testing</h1>
+                </section>
 
 
                 <!-- MATT END -->
@@ -1016,6 +1019,7 @@ function checkForWebComponentsOnPage() {
                     <aside class="notes">
                         <ul>
                             <li>Don't need to polyfill chrome</li>
+                            <li>polyfill needs to keep upwith browser technology, who is native</li>
                             <li>Can use shadow dom over shadey</li>
                         </ul>
                     </aside> 
@@ -1056,64 +1060,6 @@ function checkForWebComponentsOnPage() {
                     </aside> 
                 </section>
 
-                <!-- What's next -->
-
-                <section>
-                    <h1>4. FOUC</h1>
-                    <aside class="notes">
-                        <ul>
-                            <li>Flash of unstyled content</li>
-                            <li>Two examples:</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section data-background="#e80042">
-                    <video controls style="width:42%" class="shadow">
-                      <source src="/videos/polyfill-performance/uncache-polymer-safari.mp4" type="video/mp4">
-                    </video>
-                    <aside class="notes">
-                        <ul>
-                            <li>Really laggy and ugly when nothing cached</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section data-background="#e80042">
-                    <video controls style="width:42%" class="shadow">
-                      <source src="/videos/polyfill-performance/cache-polymer-safari.mp4" type="video/mp4">
-                    </video>
-                    <aside class="notes">
-                        <ul>
-                            <li>Not so bad when assets cached, but still not great</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section data-background="#eeeeee">
-                    <pre style="margin: 0 auto; width: 50%;"><code class="html" data-trim>
-&lt;my-element unresolved&gt;&lt;/my-element&gt;
-                    </code></pre>
-                    <pre style="margin: 0 auto; width: 50%;"><code class="css" data-trim>
-&lt;style&gt;
-  my-element:unresolved {
-    display: none;
-  }
-&lt;/style&gt;
-                    </code></pre>
-                    <pre style="margin: 0 auto; width: 50%;"><code class="hljs" data-trim>
-this.removeAttribute('unresolved');
-                    </code></pre>
-                    <aside class="notes">
-                        <ul>
-                            <li>There is some nice syntactic sugar for this</li>
-                            <li>I tried this and had no success</li>
-                            <li>Alternative is to loop over data set and append elements with JS</li>
-                        </ul>
-                    </aside>
-                </section>
-
-
                 <section>
                     <p>skeleton CSS / unresolved styles</p>
                     <aside class="notes">
@@ -1130,10 +1076,11 @@ this.removeAttribute('unresolved');
                     </aside>           
                 </section>
 
+
                 <!-- What's next -->
                 <section data-background="#e80042">
-                    <video width="500px" style="top:0px;"controls class="shadow">
-                      <source src="/videos/polyfil-performance/cache-polymer-safari.mp4" type="video/mp4">   
+                    <video controls style="width:42%" class="shadow">
+                      <source src="/videos/polyfill-performance/uncache-polymer-safari.mp4" type="video/mp4">
                     </video>
                     <aside class="notes">
                         <ul>
@@ -1146,8 +1093,8 @@ this.removeAttribute('unresolved');
 
                 <!-- What's next -->
                 <section data-background="#e80042">
-                    <video width="500px" style="top:0px;"controls class="shadow">
-                      <source src="/videos/polyfil-performance/uncache-polymer-safari.mp4" type="video/mp4">   
+                    <video controls style="width:42%" class="shadow">
+                      <source src="/videos/polyfill-performance/cache-polymer-safari.mp4" type="video/mp4">
                     </video>
                     <aside class="notes">
                         <ul>
@@ -1168,9 +1115,44 @@ this.removeAttribute('unresolved');
                 <section>
                     <ul>
                         <li>1. Conditionally load polyfill before web components in DOM</li></br></br>
-                        <li class="fragment">2. Unresolved styles for before web components ready</li></br></br>
-                        <li class="fragment">3. Shadow DOM is coming to Safari and IE (soon...ish)</li>
+                        <li class="fragment">2. Shadow DOM is coming to Safari and IE (soon...ish)</li></br></br>
+                        <li class="fragment">3. Unresolved styles for before web components ready</li>
                     </ul>
+                </section>
+
+                <section data-background="#eeeeee">
+                    <pre style="margin: 0 auto; width: 50%;"><code class="html" data-trim>
+&lt;my-element unresolved&gt;&lt;/my-element&gt;
+                    </code></pre>
+                    <pre style="margin: 0 auto; width: 50%;"><code class="css" data-trim>
+&lt;style&gt;
+  my-element:unresolved {
+    display: none;
+  }
+&lt;/style&gt;
+                    </code></pre>
+                    <pre style="margin: 0 auto; width: 50%;"><code class="hljs" data-trim>
+this.removeAttribute('unresolved');
+                    </code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>There is some nice syntactic sugar for this</li>
+                            <li>We have not implemented this yet</li>
+                            <li>Alternative is to loop over data set and append elements with JS</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- What's next -->
+                <section>
+                    <p>Expanding outside of the product page</p>
+                    <aside class="notes">
+                        <ul>
+                            <li>NAP live homepage</li>
+                            <li>Basket upsell</li>
+                            <li>Listing page</li>
+                        </ul>
+                    </aside>   
                 </section>
 
                 <!-- Resources -->
