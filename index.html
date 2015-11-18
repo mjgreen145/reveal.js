@@ -678,20 +678,39 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <li><a href="https://github.com/PolymerLabs/crisper">crisper</a></li>
                     <li><a href="https://github.com/PolymerLabs/polyserve">polyserve</a></li>
                     <li><a href="https://github.com/PolymerLabs/polylint">polylint</a></li>
+                    <li><a href="https://github.com/PolymerLabs/polydev">polydev</a></li>
                     </ul>
                     <aside class="notes">
                         <ul>
                             <li>hydrolysis - Static analysis utilities, get api, build docs</li>
                             <li>crisper - CSP compliance, security</li>
                             <li>polyserve - serve and demo your components</li>
-                            <li>polylint - serve and demo your components</li>
+                            <li>polylint - lint your polymer components</li>
+                            <li>polydev - dev tools</li>
                         </ul>
                     </aside>                                       
                 </section> 
 
                 <!-- Structured Data -->
                 <section>
-                    <h1>structured data</h1>                                          
+                    <h1>structured data</h1>
+                    <aside class="notes">
+                        <ul>
+                            <li>What is structured data</li>
+                            <li>Mark up tags</li>
+                            <li>Identify content types</li>
+                        </ul>
+                    </aside>                                            
+                </section>
+
+                <section data-background="#eeeeee">
+                    <img height="600" src="/images/components-demo/product-shadow-dom.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>this is nap product, seen earlier</li>
+                            <li>Show schema tags</li>
+                        </ul>
+                    </aside>                      
                 </section>
 
                 <section data-background="#e80042">
@@ -714,7 +733,6 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <aside class="notes">
                         <ul>
                             <li>polymer perfect for components, do once, everyone gets it</li>
-                            <li>Hopefully Taylor won't mind this</li>
                         </ul>
                     </aside>
                 </section>
@@ -730,20 +748,26 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     </aside>
                 </section>
 
+                <section data-background="#e80042">
+                   <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
+                </section>
 
-                <section data-background="#eeeeee">
-                    <img height="600" src="/images/components-demo/product-shadow-dom.png">
+                <section data-background="#e80042">
+                    <img height="150" src="/images/structured-data/errors.png" class="shadow">
                     <aside class="notes">
                         <ul>
-                            <li>All that is in shadow dom, or in this case, shadydom as polyfiled</li>
-                            <li>Added schema tags</li>
-                            <li>When released we saw errors in webmaster tools</li>
+                            <li>Google tells us there are errors</li>
                         </ul>
                     </aside>                      
                 </section>
 
                 <section data-background="#e80042">
-                   <img src="http://cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4">
+                    <img height="400" src="/images/structured-data/test-live-data.png" class="shadow">
+                    <aside class="notes">
+                        <ul>
+                            <li>Ok test live data</li>
+                        </ul>
+                    </aside>                      
                 </section>
 
                 <section data-background="#e80042">
@@ -752,9 +776,11 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                         <ul>
                             <li>Run the tests from web master tools on url</li>
                             <li>Error</li>
+                            <li>Confused should just work</li>
                         </ul>
                     </aside>                      
                 </section>
+
 
                 <section data-background="#e80042">
                     <img height="439" src="/images/structured-data/structured-data-body-592505.png" class="shadow">
@@ -776,8 +802,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                         <ul>
                             <li>Structered data tool understands rendered components (body)</li>
                             <li>Structured data tool doesn't render polymer components (url)</li>
-                            <li>Google search needs to index pages, can take days</li>
                             <li>Polyfill was not rendering components in time for google bot</li>
+                            <li>Google search needs to index pages, can take days</li>
                         </ul>
                     </aside>                                                                 
                 </section>
@@ -792,9 +818,8 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <img height="150" src="/images/structured-data/email.png" class="shadow">
                     <aside class="notes">
                         <ul>
-                            <li>Polymer team were amazing</li>
                             <li>updates to webcomponentsjs</li>
-                            <li>Thanks to taylor savage for all his help</li>
+                            <li>Polymer team were amazing</li>
                         </ul>
                     </aside>                                                                 
                 </section>
@@ -843,42 +868,9 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                     <h1>hacking seo testing</h1>
                     <aside class="notes">
                         <ul>
-                            <li>Selenium Webdriver and jUnit</li>
-                            <li>In CI pipline after build and deploy, seperate from integration</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section data-background="#eeeeee">
-                    <pre style="margin: 0; width: 100%;"><code class="java" data-trim>
-    @Test
-    public void markupTest() {
-        JsonArray tripleGroups = getJsonElements();
-        for (int i = 0; i < tripleGroups.size(); i++) {
-            JsonObject errors = tripleGroups.get(i).getAsJsonObject().get("errorsByOwner").getAsJsonObject();
-            assertTrue("Tag analysis failed: " + Arrays.toString(errors.entrySet().toArray()),errors.entrySet().isEmpty() );
-
-            JsonObject warnings = tripleGroups.get(i).getAsJsonObject().get("warningsByOwner").getAsJsonObject();
-            if (!warnings.entrySet().isEmpty())
-                fail("Tag analysis failed: " + Arrays.toString(warnings.entrySet().toArray()));
-        }
-    }
-
-    private JsonArray getJsonElements() {
-        String dom = ((JavascriptExecutor) browser.driver).executeScript("return document.documentElement.outerHTML").toString();
-
-        NameValuePair html = new BasicNameValuePair("html", dom);
-
-        String json = HttpFunctions.httpsPost(URI.create("https://structured-data-testing-tool.developers.google.com/sdtt/web/validate"), newArrayList(html));
-
-        JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        return jsonObject.getAsJsonArray("tripleGroups");
-    }
-                    </code></pre>
-                    <aside class="notes">
-                        <ul>
-                            <li>junit test extracts the dom, posts to Structured Data Tool</li>
-                            <li>parse response and assert whether there are any errors or warnings</li>
+                            <li>In CI pipline</li>
+                            <li>Post DOM to structure data tool</li>
+                            <li>Parse results</li>
                             <li>Thanks to Adela</li>
                         </ul>
                     </aside>
@@ -1053,7 +1045,7 @@ function checkForWebComponentsOnPage() {
 
                 <!-- What's next -->
                 <section>
-                    <h1>coming soon...</h1>
+                    <h1>what's next for us </h1>
                     <aside class="notes">
                         <ul>
                             <li>Things we want to do</li>
@@ -1095,20 +1087,13 @@ function checkForWebComponentsOnPage() {
                     <p>optimize build</p>
                     <aside class="notes">
                         <ul>
-                            <li>Use polyserve - keep standards</li>
-                            <li>Rewrite elements using seed elements
-                                <ul>
-                                    <li>again more consistancy</li>
-                                    <li>Free documentation and demo</li>
-                                    <li>move each element into own repo - better version control</li>
-                                    <li>make new bundle / page approach based on repos</li>
-                                </ul>
-                            </li>
+                            <li>move each element into own repo - better version control</li>
                         </ul>
                     </aside> 
                 </section>
 
-                <section>
+<!-- removing section incase other people are interested -->
+<!--                 <section>
                     <p>skeleton CSS / unresolved styles</p>
                     <aside class="notes">
                         <ul>
@@ -1125,7 +1110,6 @@ function checkForWebComponentsOnPage() {
                 </section>
 
 
-                <!-- What's next -->
                 <section data-background="#e80042">
                     <video controls style="width:42%" class="shadow">
                       <source src="/videos/polyfill-performance/uncache-polymer-safari.mp4" type="video/mp4">
@@ -1139,7 +1123,6 @@ function checkForWebComponentsOnPage() {
                     </aside>                       
                 </section>
 
-                <!-- What's next -->
                 <section data-background="#e80042">
                     <video controls style="width:42%" class="shadow">
                       <source src="/videos/polyfill-performance/cache-polymer-safari.mp4" type="video/mp4">
@@ -1155,7 +1138,6 @@ function checkForWebComponentsOnPage() {
                     </aside>                       
                 </section>
 
-                <!-- What's next -->
                 <section>
                     <p>Blurgh... gross, what can you do about that?</p>
                 </section>
@@ -1189,7 +1171,8 @@ this.removeAttribute('unresolved');
                             <li>Alternative is to loop over data set and append elements with JS</li>
                         </ul>
                     </aside>
-                </section>
+                </section> -->
+
 
                 <!-- What's next -->
                 <section>
@@ -1227,7 +1210,7 @@ this.removeAttribute('unresolved');
 					<li><a href="http://webcomponents.org/">webcomponents.org</a></li>
                     <ul>
                 </section>
-wfuhat the fuck?      <section>
+                <section>
                     <p>Twitter</p>
                     <ul>
                     <li><a href="https://twitter.com/polymer">@polymer</a></li>
