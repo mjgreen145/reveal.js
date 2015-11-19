@@ -151,6 +151,16 @@ body {
 .reveal li:last-child{
   margin-right: 0;
 }
+
+ul.list{
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul.list li{
+  margin-right: 0;
+}
+
 .reveal dt {
   font-weight: bold; }
 
