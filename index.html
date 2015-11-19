@@ -865,7 +865,7 @@ describe('&lt;nap-wishlist-button&gt;', function () {
                 </section>
 
                 <section>
-                    <h1>hacking seo testing</h1>
+                    <h1>hacking seo testing for ci</h1>
                     <aside class="notes">
                         <ul>
                             <li>In CI pipline</li>
@@ -1092,8 +1092,8 @@ function checkForWebComponentsOnPage() {
                     </aside> 
                 </section>
 
-<!-- removing section incase other people are interested -->
-<!--                 <section>
+
+              <section>
                     <p>skeleton CSS / unresolved styles</p>
                     <aside class="notes">
                         <ul>
@@ -1104,74 +1104,10 @@ function checkForWebComponentsOnPage() {
                                 </ul>
                             </li>
                             <li>styles before webcomponent is ready</li>
-                            <li>We do this to stop the following</li>
                         </ul>
                     </aside>           
                 </section>
 
-
-                <section data-background="#e80042">
-                    <video controls style="width:42%" class="shadow">
-                      <source src="/videos/polyfill-performance/uncache-polymer-safari.mp4" type="video/mp4">
-                    </video>
-                    <aside class="notes">
-                        <ul>
-                            <li>Safari - cached assets</li>
-                            <li>jumps are also polyfill polyfilling</li>
-                            <li>Throttled api calls - bottom upsells slowed</li>
-                        </ul>
-                    </aside>                       
-                </section>
-
-                <section data-background="#e80042">
-                    <video controls style="width:42%" class="shadow">
-                      <source src="/videos/polyfill-performance/cache-polymer-safari.mp4" type="video/mp4">
-                    </video>
-                    <aside class="notes">
-                        <ul>
-                            <li>blurgh gross!!</li>
-                            <li>worst case scenario, throttled everything</li>
-                            <li>Safari - uncached assets</li>
-                            <li>jumps are also polyfill polyfilling</li>
-                            <li>Throttled api calls - bottom upsells slowed</li>
-                        </ul>
-                    </aside>                       
-                </section>
-
-                <section>
-                    <p>Blurgh... gross, what can you do about that?</p>
-                </section>
-
-                <section>
-                    <ul>
-                        <li>1. Conditionally load polyfill before web components in DOM</li></br></br>
-                        <li class="fragment">2. Shadow DOM is coming to Safari and IE (soon...ish)</li></br></br>
-                        <li class="fragment">3. Unresolved styles for before web components ready</li>
-                    </ul>
-                </section>
-
-                <section data-background="#eeeeee">
-                    <pre style="margin: 0 auto; width: 50%;"><code class="html" data-trim>
-&lt;my-element unresolved&gt;&lt;/my-element&gt;
-                    </code></pre>
-                    <pre style="margin: 0 auto; width: 50%;"><code class="css" data-trim>
-&lt;style&gt;
-  my-element:unresolved {
-    display: none;
-  }
-&lt;/style&gt;
-                    </code></pre>
-                    <pre style="margin: 0 auto; width: 50%;"><code class="hljs" data-trim>
-this.removeAttribute('unresolved');
-                    </code></pre>
-                    <aside class="notes">
-                        <ul>
-                            <li>There is some nice syntactic sugar for this</li>
-                            <li>We have not implemented this yet</li>
-                            <li>Alternative is to loop over data set and append elements with JS</li>
-                        </ul>
-                    </aside>
-                </section> -->
 
 
                 <!-- What's next -->
@@ -1227,6 +1163,20 @@ this.removeAttribute('unresolved');
                 <!-- Shall we show it? -->
                 <section>
                     <h1>let's see it</h1>
+                </section>
+
+                <section data-background="#e80042">
+                    <video controls style="width:42%" class="shadow">
+                      <source src="/videos/demo/demo-from-dev-summit.mp4" type="video/mp4">
+                    </video>
+                    <aside class="notes">
+                        <ul>
+                            <li>Stole from chrome dev summit</li>
+                            <li>Componets are dropped into page</li>
+                            <li>Different products use different components</li>
+                            <li>if you want us to show you come see us after</li>
+                        </ul>
+                    </aside>                       
                 </section>
 
                 <section>
